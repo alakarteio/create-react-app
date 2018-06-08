@@ -1,6 +1,11 @@
 import { container } from 'hoc'
 import Component from './jokes'
+import listeners from './jokes.listeners'
 
 const screen = 'jokes'
 
-export default container({ screen })(Component)
+const mapStore = store => ({
+  jokes: store.data.jokes.getKeys(),
+})
+
+export default container({ screen, listeners, mapStore })(Component)
