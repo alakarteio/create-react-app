@@ -1,6 +1,6 @@
+import 'normalize.css'
 import React from 'react'
 import Screens from './screens'
-import 'normalize.css'
 
 const App = () => <Screens />
 

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from '@k-redux-router/react-k-ramel'
 import { component } from 'hoc'
 import styles from './main.styles'
-
 import logo from './logo.png'
 
 const Main = ({ classes }) => (
