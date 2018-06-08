@@ -4,11 +4,9 @@ import { Link } from '@k-redux-router/react-k-ramel'
 import { component } from 'hoc'
 import styles from './main.styles'
 
-const Main = ({
-  classes,
-}) => (
+const Main = ({ classes }) => (
   <div className={classes.main}>
-    <Link code="jokes">>Go to jokes</Link>
+    <Link code="jokes">Go to jokes</Link>
   </div>
 )
 

@@ -4,8 +4,8 @@ import Jokes from './jokes'
 
 const Screens = () => (
   <Fragment>
-      <Main />
-      <Jokes />
+    <Main />
+    <Jokes />
   </Fragment>
 )
 
