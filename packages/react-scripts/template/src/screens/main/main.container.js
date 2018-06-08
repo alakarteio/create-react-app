@@ -1,6 +1,6 @@
-import { container } from 'hoc';
-import Component from './main';
+import { container } from 'hoc'
+import Component from './main'
 
-const screen = 'main';
+const screen = 'main'
 
-export default container({ screen })(Component);
+export default container({ screen })(Component)
