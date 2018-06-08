@@ -1,7 +1,7 @@
 'use strict'
 
-const paths = require('../config/paths')
 const { CLIEngine } = require('eslint')
+const paths = require('../config/paths')
 
 var cli = new CLIEngine({
   extensions: ['.js', '.jsx'],
