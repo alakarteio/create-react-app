@@ -55,6 +55,7 @@
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "k-ramel": "^0.12.1",
+    "normalize.css": "^8.0.0",
     "object-assign": "4.1.1",
     "path-to-regexp": "^2.2.1",
     "postcss-flexbugs-fixes": "3.2.0",
