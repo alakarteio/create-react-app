@@ -1,4 +1,4 @@
-import { router } from '@k-redux-router/react-k-ramel';
+import { router } from '@k-redux-router/react-k-ramel'
 
 const routes = {
   '/': {
@@ -12,6 +12,6 @@ const routes = {
       },
     },
   },
-};
+}
 
-export default router({ routes });
+export default router({ routes })

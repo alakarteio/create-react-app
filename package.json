@@ -14,7 +14,7 @@
     "start": "cd packages/react-scripts && node scripts/start.js",
     "screencast": "svg-term --cast hItN7sl5yfCPTHxvFg5glhhfp --out screencast.svg --window",
     "test": "cd packages/react-scripts && node scripts/test.js --env=jsdom",
-    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'",
+    "format": "prettier --trailing-comma es5 --print-width 200 --no-semi --single-quote --write 'packages/*/*.{js,jsx}' 'packages/*/!(node_modules)/**/*.js'",
     "precommit": "lint-staged"
   },
   "devDependencies": {
@@ -27,8 +27,8 @@
     "svg-term-cli": "^2.0.3"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --trailing-comma es5 --single-quote --write",
+    "*.{js,jsx}": [
+      "prettier --trailing-comma es5 --print-width 200 --single-quote --no-semi --write",
       "git add"
     ],
     "yarn.lock": [

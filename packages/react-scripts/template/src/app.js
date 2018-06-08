@@ -19,9 +19,9 @@
 
 // export default App
 
-import React from 'react';
-import Screens from './screens';
+import React from 'react'
+import Screens from './screens'
 
-const App = () => <Screens />;
+const App = () => <Screens />
 
-export default App;
+export default App
