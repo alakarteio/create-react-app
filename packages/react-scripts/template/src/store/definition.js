@@ -1,4 +1,4 @@
-import { keyValue, simpleObject } from 'k-ramel';
+import { keyValue, simpleObject } from 'k-ramel'
 
 export default {
   data: {
@@ -7,4 +7,4 @@ export default {
   ui: {
     selected: simpleObject({ defaultData: '' }),
   },
-};
+}

@@ -1,6 +1,6 @@
-import { container } from 'hoc';
-import Component from './joke';
+import { container } from 'hoc'
+import Component from './joke'
 
-const mapStore = (store, { id }) => store.data.jokes.get(id);
+const mapStore = (store, { id }) => store.data.jokes.get(id)
 
-export default container({ mapStore })(Component);
+export default container({ mapStore })(Component)
