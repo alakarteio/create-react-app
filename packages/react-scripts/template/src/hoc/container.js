@@ -10,17 +10,24 @@ export default ({ screen, name, listeners, form, injectForm, mapStore, loader } 
   const hocs = []
   // route (hide or not the component)
   if (screen) {
-    if (typeof screen === 'string') hocs.push(forRoute.absolute(screen))
-    else if (screen.relative) hocs.push(forRoute(screen.code))
-    else hocs.push(forRoute.absolute(screen.code))
+    if (typeof screen === 'string') {
+      hocs.push(forRoute.absolute(screen))
+    } else if (screen.relative) {
+      hocs.push(forRoute(screen.code))
+    } else {
+      hocs.push(forRoute.absolute(screen.code))
+    }
   }
 
   // listeners
   if (listeners) {
     let listenersContext = name
     if (screen) {
-      if (typeof screen === 'string') listenersContext = screen
-      else listenersContext = screen.code
+      if (typeof screen === 'string') {
+        listenersContext = screen
+      } else {
+        listenersContext = screen.code
+      }
     }
 
     hocs.push(listen(listeners, listenersContext))
@@ -36,10 +43,14 @@ export default ({ screen, name, listeners, form, injectForm, mapStore, loader } 
   }
 
   // form into props
-  if (injectForm) hocs.push(getContext())
+  if (injectForm) {
+    hocs.push(getContext())
+  }
 
   // map store to props
-  if (mapStore) hocs.push(inject(mapStore))
+  if (mapStore) {
+    hocs.push(inject(mapStore))
+  }
 
   // loader (hide/show elements)
   if (loader) {

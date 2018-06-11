@@ -11,7 +11,7 @@ const Main = ({ classes }) => (
       <img src={logo} className={classes.logo} alt="logo" />
       <h1 className={classes.title}>Welcome to k-ramel</h1>
     </header>
-    <Link code="jokes">>Go to jokes</Link>
+    <Link code="jokes">Go to jokes</Link>
   </div>
 )
 
